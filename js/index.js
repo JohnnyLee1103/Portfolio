@@ -44,3 +44,18 @@ window.addEventListener('mousemove', function(e){
   bg.style.backgroundPositionX = (bgX * 0.02) + '%';
   bg.style.backgroundPositionY = (bgY * 0.02) + '%';
 })
+
+const scrollDownLink = document.getElementById('scroll-down-link');
+
+scrollDownLink.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const content = document.getElementById('content');
+    const contentTop = content.getBoundingClientRect().top + window.scrollY;
+    const destination = contentTop + window.innerHeight;
+
+    window.scrollTo({
+        top: destination,
+        behavior: 'smooth'
+    });
+});
