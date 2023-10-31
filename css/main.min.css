@@ -11995,7 +11995,7 @@ textarea.form-control-lg {
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
-  filter: brightness(80%);
+  filter: brightness(75%);
 }
 .header .project-title {
   font-size: 2rem;
