@@ -1,0 +1,239 @@
+$line-height-sm: .8;
+
+$font-weight-bolder: 900;
+
+$btn-padding-y: 0.5rem;
+$btn-padding-x: 1.5rem;
+
+$dark: #222222;
+$secondary: #323232;
+$primary: #C3EED7;
+$success: rgb(231, 250, 236);
+$light: #E5E5E5;
+
+$accordion-bg: $dark;
+$accordion-color: $light;
+$accordion-button-color: $success;
+$accordion-icon-color: $primary;
+$accordion-button-active-bg: $dark;
+$accordion-button-active-color: $success;
+$accordion-icon-active-color: $success;
+$accordion-button-focus-box-shadow: $dark;
+
+$list-group-hover-bg: $light;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --bs-body-font-family: 'Kanit', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    height: 100vh;
+
+    & h1, & h6 {
+      animation: moveInBottom 1s;
+    }
+
+    & .hero-img {
+      height: 100vh;
+      width: 100vw;
+      object-fit: cover;
+      overflow: hidden;
+      filter: brightness(80%);
+    }
+
+    & .project-title {
+      font-size: 2rem;
+      position: absolute;
+      bottom: 4%;
+      left: 50%;
+      transform: translate(-50%);
+      line-height: 2rem;
+      text-shadow: 0.1rem 0 0.5rem black;
+      animation: moveInBottom2 1s;
+    }
+}
+
+section {
+  & .projects-card {
+    animation: moveInLeft 1s;
+  }
+
+  & .list-group, & .info-card {
+    animation: moveInBottom 1s;
+  }
+
+  & .card {
+    animation: moveInBottom 1s;
+  }
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 0.1rem dashed rgb(231, 250, 236);
+
+  &-text {
+    white-space: nowrap;
+    display: inline-block;
+    animation: marquee 18s linear infinite;
+  }
+}
+
+.marquee-lg {
+  width: 100%;
+  overflow: hidden;
+
+  &-text{
+    white-space: nowrap;
+    display: inline-block;
+    animation: marquee-lg 18s linear infinite;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+@keyframes marquee-lg {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+      opacity: 0;
+      transform: translateY(3rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom2 {
+  0% {
+      opacity: 0;
+      transform: translate(-50%, 3rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(-50%, 0);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+      opacity: 0;
+      transform: translateY(-3rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(-10rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+.carousel {
+  & img {
+    object-fit: cover;
+    height: 50vh;
+    filter: brightness(60%);
+    transition: transform 0.3s;
+    overflow: hidden;
+  }
+
+  &:hover img {
+    transform: scale(1.1);
+  }
+
+  & h5, & p {
+    text-shadow: 0.1rem 0 0.5rem black;
+  }
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  display: none;
+}
+
+.bi-chevron-up::before {
+    font-size: 1.5rem;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.image-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  & img {
+    width: 48vw;
+    animation: fadeIn 0.5s
+  }
+}
+
+.overview-container img {
+  object-fit: cover;
+
+}
+
+.accordion {
+  --bs-accordion-border-color: #323232;
+}

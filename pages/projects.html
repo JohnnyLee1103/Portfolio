@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Johhny Lee - UI/UX, Web Designer</title>
+    <link rel="stylesheet" href="../css/main.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="icon" href="../media/Logo.png">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark mx-4 my-4 p-0 fixed-top autohide" aria-label="Offcanvas navbar large">
+        <div class="container-xxl bg-secondary rounded-2 px-4">
+          <a class="navbar-brand py-2" href="./index.html">
+            <img src="../media/Logo.png" alt="logo" width="30">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+            <div class="offcanvas-header align-self-end p-4">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item px-3 py-2">
+                  <a class="nav-link" href="./index.html">HOME</a>
+                </li>
+                <li class="nav-item px-3 py-2">
+                  <a class="nav-link" href="./projects.html">PROJECTS</a>
+                </li>
+                <li class="nav-item px-3 py-2">
+                  <a class="nav-link" href="./info.html">INFO</a>
+                </li>
+                <li class="nav-item px-3 py-2">
+                  <a class="nav-link" href="./contact.html">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="text-light pb-5">
+      <div class="marquee-lg pt-5">
+        <div class="marquee-lg-text py-3 pt-5 pb-0">
+          <span class="text-uppercase fw-bolder display-1">• PROJECTS • PROJECTS • PROJECTS • PROJECTS • PROJECTS</span>
+        </div>
+      </div>
+      <div class="container-lg col-md-9 col-lg-6 py-5 px-4 rounded-3 projects-card text-dark">
+        <h2 class="display-4 lh-1 fw-lighter text-uppercase mb-3"><span class="fw-semibold">projects</span> — VISUAL IDENTITY / UI-UX / WEB DESIGN</h2>
+        <p class="fw-bold">創建量身訂做且獨特、吸睛的網頁設計，我致力於尋找能夠帶來改變的小細節，以創造優質的數位體驗，以下是我製作的幾個專案，若您有興趣可以透過下方連結，檢視我撰寫此網站的原始碼。</p>
+        <a href="#"><button class="btn btn-outline-dark rounded-5" type="button">GITHUB　<i class="bi bi-box-arrow-up-right"></i></button></a>
+      </div>
+      <div class="container px-4 py-5">
+        <div class="list-group list-group-flush text-uppercase fs-4">
+          <a href="./projects/my-video-redesign.html" class="list-group-item list-group-item-action px-0 py-3" onmouseover="showImage('image1')" onmouseout="hideImage('image1')"><span class="fw-semibold">my video redesign</span><span class="fw-light"> — UI/UX APP REDESIGN</span></a>
+          <a href="https://www.dmt-design.com.tw/" class="list-group-item list-group-item-action px-0 py-3" onmouseover="showImage('image2')" onmouseout="hideImage('image2')"><span class="fw-semibold">DMT INTERIOR DESIGN</span><span class="fw-light"> — WORDPRESS WEB DESIGN</span></a>
+          <a href="./projects/selected.html" class="list-group-item list-group-item-action px-0 py-3" onmouseover="showImage('image3')" onmouseout="hideImage('image3')"><span class="fw-semibold">SELECTED</span><span class="fw-light"> — E-COMMERCE WEB DESIGN</span></a>
+          <a href="./projects/daily-ui-challenge.html" class="list-group-item list-group-item-action px-0 py-3" onmouseover="showImage('image4')" onmouseout="hideImage('image4')"><span class="fw-semibold">DAILY UI CHALLENGE</span><span class="fw-light"> — visual REDESIGN</span></a>
+          <a href="./projects/goldenway.html" class="list-group-item list-group-item-action px-0 py-3" onmouseover="showImage('image5')" onmouseout="hideImage('image5')"><span class="fw-semibold">GOLDENWAY</span><span class="fw-light"> — web redesign</span></a>
+          <div id="image1-popup" class="image-popup z-1 p-4">
+            <img src="../media/my_video_cover.png" alt="project-1-cover">
+          </div>
+          <div id="image2-popup" class="image-popup z-1 p-4">
+            <img src="../media/dmt_cover.jpg" alt="project-2-cover">
+          </div>
+          <div id="image3-popup" class="image-popup z-1 p-4">
+            <img src="../media/selected_cover.png" alt="project-3-cover">
+          </div>
+          <div id="image4-popup" class="image-popup z-1 p-4">
+            <img src="../media/daily_ui.png" alt="project-4-cover">
+          </div>
+          <div id="image5-popup" class="image-popup z-1 p-4">
+            <img src="../media/goldenway_cover.png" alt="project-5-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark text-light">
+      <div class="container">
+        <div class="row pt-5 px-4 justify-content-between">
+          <div class="col-md-4 pb-5 px-0">
+            <h2 class="lh-1 fw-lighter text-success text-uppercase fs-3 mb-3"><span class="fw-semibold">Johnny Lee</span> — UI-UX DESIGNER / WEB DESIGNER — Taoyuan / Taiwan</h2>
+            <a href="./contact.html"><button class="btn btn-outline-primary rounded-5 me-1" type="button">CONTACT ME</button></a>
+          </div>
+          <div class="col-md-4">
+            <ul class="nav justify-content-between text-uppercase fs-5">
+              <li class="nav-item"><a href="./index.html" class="nav-link px-2 pt-0 pb-4 link-light">Home</a></li>
+              <li class="nav-item"><a href="./projects.html" class="nav-link px-2 pt-0 pb-4 link-light">Projects</a></li>
+              <li class="nav-item"><a href="./info.html" class="nav-link px-2 pt-0 pb-4 link-light">info</a></li>
+              <li class="nav-item"><a href="./contact.html" class="nav-link px-2 pt-0 pb-4 link-light">contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <foot class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+          <p class="col-md-4 mb-0">© 2023 JohnnyLeeDesign</p>
+        </foot>
+      </div>
+      <button type="button" class="btn btn-secondary btn-floating btn-lg" id="btn-back-to-top">
+      <i class="bi bi-chevron-up"></i>
+      </button>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/index.js"></script>
+  </body>
+</html>
