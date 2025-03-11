@@ -12026,6 +12026,9 @@ section .card {
   width: 100%;
   z-index: -1;
   overflow: hidden;
+  will-change: transform, opacity;
+  transform: translateZ(0); /* Forces GPU acceleration */
+  backface-visibility: hidden;
 }
 .bg-video__content {
   height: 100%;
